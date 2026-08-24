@@ -1,0 +1,117 @@
+﻿Summary,Issue key,Issue id,Issue Type,Status,Project key,Project name,Project type,Project lead,Project lead id,Project description,Priority,Resolution,Assignee,Assignee Id,Reporter,Reporter Id,Creator,Creator Id,Created,Updated,Last Viewed,Resolved,Due date,Votes,Description,Environment,Watchers,Watchers Id,Original estimate,Remaining Estimate,Time Spent,Work Ratio,Σ Original Estimate,Σ Remaining Estimate,Σ Time Spent,Security Level,Custom field (Actual end),Custom field (Actual start),Custom field (Affected hardware),Custom field (Affected services),Custom field (Approvals),Custom field (Asset type),Custom field (Asset type),Custom field (Asset type),Custom field (Asset type),Custom field (Asset type),Custom field (Asset type),Custom field (Asset type),Custom field (Asset type),Custom field (Asset type),Custom field (Asset type),Custom field (Asset type),Custom field (Asset type),Custom field (Atlas goals),Custom field (Atlas project),Custom field (Atlas project status),Custom field (Backout plan),Custom field (Begin Date),Custom field (Category),Custom field (Category),Custom field (Change reason),Custom field (Change risk),Custom field (Change type),Custom field (Comments),Custom field (Confidence),Custom field (Delivery progress),Custom field (Delivery status),Custom field (Department),Custom field (Department),Custom field (Department),Custom field (Department),Custom field (Department),Custom field (Department),Custom field (Department),Custom field (Department),Custom field (Designs ready),Custom field (Development),Custom field (Documents),Custom field (Effort),Custom field (End Date),Custom field (Epic Color),Custom field (Epic Name),Custom field (Epic Status),Custom field (Goals),Custom field (Idea archived),Custom field (Idea archived on),Custom field (Idea short description),Custom field (Impact),Custom field (Impact),Custom field (Impact score),Custom field (Implementation plan),Custom field (Insights),Custom field (Investigation reason),Custom field (Issue color),Custom field (Linked issues),Custom field (Locked forms),Custom field (Major incident),Custom field (Open forms),Custom field (Pending reason),Custom field (Planned end),Custom field (Planned start),Custom field (Project overview key),Custom field (Project overview status),Custom field (Project start),Custom field (Project target),Custom field (Rank),Custom field (Request Type),Custom field (Request language),Custom field (Request participants),Custom field (Responders),Custom field (Revision),Custom field (Roadmap),Custom field (Root cause),Satisfaction rating,Custom field (Satisfaction date),Custom field (Sentiment),Custom field (Severity),Custom field (Source),Custom field (Spec ready),Custom field (Start date),Custom field (Story Points),Custom field (Story point estimate),Custom field (Submitted forms),Custom field (Target end),Custom field (Target start),Custom field (Team),Custom field (Test plan),Custom field (Time to close after resolution),Custom field (Time to done),Custom field (Time to first response),Custom field (Time to resolution),Custom field (Time to review normal change),Custom field (Total forms),Custom field (Urgency),Custom field (Value),Custom field (Vulnerability),Custom field (Work category),Custom field (Workaround),Custom field ([CHART] Date of First Response),Custom field ([CHART] Time in Status),Status Category,Status Category Changed
+Auto-rotation screen test,MGTSC-8,16594,Test,To Do,MGTSC,M7- GO Train Schedules and Claims.,software,Analytica Squad,712020:3a07c8ae-ecbf-4dc0-be70-568e2f6a71a6,,Medium,,,,Analytica Squad,712020:3a07c8ae-ecbf-4dc0-be70-568e2f6a71a6,Analytica Squad,712020:3a07c8ae-ecbf-4dc0-be70-568e2f6a71a6,14/Feb/25 6:58 PM,14/Feb/25 6:58 PM,14/Feb/25 7:01 PM,,,0,"*Steps to reproduce*
+
+# Navigate to App GO Train Schedules and Claims (GooglePlays)
+# Download App to mobile Pixel 7(Android)
+# Open the App after downloading.
+# Enable auto-rotate and rotate the phone to the right or left.
+
+*Expected result*
+The expected result when rotating the screen to the right is that the app should adjust its layout to fit the new width and height without changing the overall appearance, only the parameters.
+
+*Actual result*
+
+After changing the screen orientation to the right or left, the app adjusted its width and height to fit the phone’s position. Everything remained unchanged, except that the app became less convenient to use, as the central area became narrower and displayed fewer available routes.",,,,,,,,,,,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@28cbd13a,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i00xi3:,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,To Do,14/Feb/25 6:58 PM
+low network stress test ,MGTSC-7,16593,Test,To Do,MGTSC,M7- GO Train Schedules and Claims.,software,Analytica Squad,712020:3a07c8ae-ecbf-4dc0-be70-568e2f6a71a6,,Medium,,,,Analytica Squad,712020:3a07c8ae-ecbf-4dc0-be70-568e2f6a71a6,Analytica Squad,712020:3a07c8ae-ecbf-4dc0-be70-568e2f6a71a6,14/Feb/25 6:51 PM,14/Feb/25 6:51 PM,,,,0,"*Steps to reproduce*
+
+# Navigate to App GO Train Schedules and Claims (GooglePlays)
+# Download App to mobile Pixel 7(Android)
+# Open the App after downloading.
+# When using a weak Wi-Fi network
+
+*Expected result*
+When using a slow Wi-Fi connection, the program is expected to take longer to respond and transfer files. However, within a few seconds, it will still process the user’s request. Long loading times will indicate a weak connection.
+
+*Actual result*
+
+The Go Train app works well even with a weak network connection. The user receives a response to their request within a few seconds.",,,,,,,,,,,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@48e89c02,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i00xhv:,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,To Do,14/Feb/25 6:51 PM
+Network absence stress test,MGTSC-6,16592,Test,To Do,MGTSC,M7- GO Train Schedules and Claims.,software,Analytica Squad,712020:3a07c8ae-ecbf-4dc0-be70-568e2f6a71a6,,Medium,,,,Analytica Squad,712020:3a07c8ae-ecbf-4dc0-be70-568e2f6a71a6,Analytica Squad,712020:3a07c8ae-ecbf-4dc0-be70-568e2f6a71a6,14/Feb/25 6:44 PM,14/Feb/25 6:44 PM,14/Feb/25 6:59 PM,,,0,"*Steps to reproduce*
+
+# Navigate to App GO Train Schedules and Claims (GooglePlays)
+# Download App to mobile Pixel 7(Android)
+# Open the App after downloading.
+# Open the app without a working network.
+
+*Expected result*
+When opening the app without network access, the app notifies the user that there is no network and that a connection is required. Saved route searches are available to the user, but creating new routes will be impossible.
+
+*Actual result*
+
+The app opens and displays the user’s recent searches. When searching for a new route, the system notifies the user of a connection issue, making it impossible to search for new routes. Only previously saved routes are available, without any updates.",,,,,,,,,,,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@cdc88b6,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i00xhn:,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,To Do,14/Feb/25 6:44 PM
+Bus or train delays or cancellation GO test,MGTSC-5,16591,Test,To Do,MGTSC,M7- GO Train Schedules and Claims.,software,Analytica Squad,712020:3a07c8ae-ecbf-4dc0-be70-568e2f6a71a6,,High,,,,Analytica Squad,712020:3a07c8ae-ecbf-4dc0-be70-568e2f6a71a6,Analytica Squad,712020:3a07c8ae-ecbf-4dc0-be70-568e2f6a71a6,14/Feb/25 6:35 PM,14/Feb/25 6:35 PM,,,,0,"*Steps to reproduce*
+
+# Navigate to App GO Train Schedules and Claims (GooglePlays)
+# Download App to mobile Pixel 7(Android)
+# Open the App after downloading.
+# Tap on TRIPS
+# Select the departure lication (Aurora GO) and Destination (Maple GO)
+# Select day (Today)
+
+*Expected result*
+The user should see a status bar indicating the delay or cancellation of the trip. Each trip includes an additional line to display information in case of a delay or cancellation.
+
+*Actual result*
+
+The system shows the user all available trips, and in a special status bar, it displays the updated time in case of a delay or ‘Cancel’ in case of a trip cancellation",,,,,,,,,,,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@6bdd3fdd,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i00xhf:,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,To Do,14/Feb/25 6:35 PM
+Switch direction schedule test ,MGTSC-4,16590,Test,To Do,MGTSC,M7- GO Train Schedules and Claims.,software,Analytica Squad,712020:3a07c8ae-ecbf-4dc0-be70-568e2f6a71a6,,Medium,,,,Analytica Squad,712020:3a07c8ae-ecbf-4dc0-be70-568e2f6a71a6,Analytica Squad,712020:3a07c8ae-ecbf-4dc0-be70-568e2f6a71a6,14/Feb/25 6:25 PM,14/Feb/25 6:25 PM,14/Feb/25 6:25 PM,,,0,"*Steps to reproduce*
+
+# Navigate to App GO Train Schedules and Claims (GooglePlays)
+# Download App to mobile Pixel 7(Android)
+# Open the App after downloading.
+# Tap on TRIPS
+# Select the departure lication (Aurora GO) and Destination (Maple GO)
+# Tap the screen to switch directions and swap the selected departure and destination locations.
+# Select day (Today)
+
+*Expected result*
+When changing the direction, the user should see the updated departure and arrival locations on the page, as well as the new departure and arrival times based on their search for the new route
+
+*Actual result*
+
+The app provides the correct response. When the destination is swapped with the departure location, the page updates and displays the new departure and arrival times based on the user’s request",,,,,,,,,,,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@76ec5e93,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i00xh7:,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,To Do,14/Feb/25 6:25 PM
+GO train and buses schedule test,MGTSC-3,16589,Test,To Do,MGTSC,M7- GO Train Schedules and Claims.,software,Analytica Squad,712020:3a07c8ae-ecbf-4dc0-be70-568e2f6a71a6,,Medium,,,,Analytica Squad,712020:3a07c8ae-ecbf-4dc0-be70-568e2f6a71a6,Analytica Squad,712020:3a07c8ae-ecbf-4dc0-be70-568e2f6a71a6,14/Feb/25 6:17 PM,14/Feb/25 6:17 PM,14/Feb/25 6:36 PM,,,0,"h2. Description
+
+*Steps to reproduce*
+
+# Navigate to App GO Train Schedules and Claims (GooglePlays)
+# Download App to mobile Pixel 7(Android)
+# Open the App after downloading.
+# Tap on TRIPS
+# Select the departure lication (Aurora GO) and Destination (Maple GO)
+# Select day (Today)
+
+*Expected result*
+The user should see the schedule of all available  trains and buses that depart from the selected routes, including departure time, arrival time, and travel duration.
+
+*Actual result*
+
+The app displayed all available buses, including departure time, arrival time, and travel duration.",,,,,,,,,,,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@581da3,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i00xgz:,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,To Do,14/Feb/25 6:17 PM
+GPS stress test,MGTSC-2,16588,Test,To Do,MGTSC,M7- GO Train Schedules and Claims.,software,Analytica Squad,712020:3a07c8ae-ecbf-4dc0-be70-568e2f6a71a6,,Medium,,,,Analytica Squad,712020:3a07c8ae-ecbf-4dc0-be70-568e2f6a71a6,Analytica Squad,712020:3a07c8ae-ecbf-4dc0-be70-568e2f6a71a6,14/Feb/25 5:53 PM,14/Feb/25 5:53 PM,14/Feb/25 6:44 PM,,,0,"*Steps to reproduce*
+
+# Navigate to App GO Train Schedules and Claims (GooglePlays)
+# Download App to mobile Pixel 7(Android)
+# Open the App after downloading.
+# Grant GPS Access only this time.
+# Close the App after selecting the settings.
+
+*Expected result*
+After closing the app and reopening it, the system should request permission again to use the user’s location and offer several options to choose from.
+
+*Actual result*
+
+The app asks again for permission to access the device’s location data and gives the user several options to choose from.",,,,,,,,,,,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@46043c4c,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i00xgr:,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,To Do,14/Feb/25 5:53 PM
+GPS permission test ,MGTSC-1,16587,Test,To Do,MGTSC,M7- GO Train Schedules and Claims.,software,Analytica Squad,712020:3a07c8ae-ecbf-4dc0-be70-568e2f6a71a6,,Medium,,,,Analytica Squad,712020:3a07c8ae-ecbf-4dc0-be70-568e2f6a71a6,Analytica Squad,712020:3a07c8ae-ecbf-4dc0-be70-568e2f6a71a6,14/Feb/25 5:40 PM,14/Feb/25 5:40 PM,14/Feb/25 5:40 PM,,,0,"Steps to reproduce
+
+1. Navigate to App GO Train Schedules and Claims (GooglePlays)
+2. Download App to mobile Pixel 7(Android)
+3. Open the App after downloading.
+
+Expected result
+When opening the app for the first time, the Go Train app requests access to the user’s location data. The user can allow access temporarily while using the app, allow access for continuous use, or deny access.
+
+
+Actual result
+When opening the app, the system requests permission to allow the app to access the user’s location. It offers the choice of precise or approximate geolocation. The user is also given three options to choose from:
+1.While using the app
+2.Only this time
+3.Deny",,Analytica Squad,712020:3a07c8ae-ecbf-4dc0-be70-568e2f6a71a6,,,,,,,,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@5ea3aed0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i00xgj:,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,To Do,14/Feb/25 5:40 PM
