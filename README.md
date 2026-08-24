@@ -106,7 +106,7 @@ The program includes:
 
 ### BDD & Cucumber
 
-- [Student Registration Form — BDD & Cucumber Testing](./BDD-Cucumber/Jira_Student_Registration_Form_Cucumber_Tests.txt)
+- [Student Registration Form — BDD & Cucumber Testing](./Jira-Student_Registration-Form-Cucumber-Tests.csv)
 
 ### Checklists
 
