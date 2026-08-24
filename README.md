@@ -91,6 +91,8 @@ The program includes:
 ### Test Cases & TestRail
 
 - [Right Way Auto Sales — Search & Filtering Testing](./Righ-Way-Auto-Sales-Searching-Filtering-Testing.csv)
+  
+- [Travel Site Testing Assessment](./Test-Cases/Travel_Site_Testing_Assessment.txt)
 
 ### Bug Reports & Jira
 
