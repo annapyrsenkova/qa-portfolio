@@ -102,7 +102,7 @@ The program includes:
 
 ### Mobile Application Testing
 
-- [Go Train & Bus Schedule — Mobile App Testing](./Mobile-Testing/Go_Train_Bus_Schedule_Mobile_App_Testing.txt)
+- [Go Train & Bus Schedule — Mobile App Testing](./Go-Train_Bus-SCHedule-Mobile-App-Testing.csv)
 
 ### BDD & Cucumber
 
