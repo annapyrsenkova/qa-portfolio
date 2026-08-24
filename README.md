@@ -94,7 +94,7 @@ The program includes:
 
 ### Bug Reports & Jira
 
-- [Jira Bug Investigation Project](./Bug-Reports/Jira_Bug_Investigation_Project.txt)
+- [Jira Bug Investigation Project](./Jira-Bug-Investigation-Project.pdf)
 
 ### API Testing & Postman
 
