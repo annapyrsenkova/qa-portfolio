@@ -92,7 +92,7 @@ The program includes:
 
 - [Right Way Auto Sales — Search & Filtering Testing](./Righ-Way-Auto-Sales-Searching-Filtering-Testing.csv)
   
-- [Travel Site Testing Assessment](./Test-Cases/Travel_Site_Testing_Assessment.txt)
+- [Travel Site Testing Assessment](./Travei-Site-Testing_assesment.xlsx)
 
 ### Bug Reports & Jira
 
