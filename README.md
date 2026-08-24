@@ -98,7 +98,7 @@ The program includes:
 
 ### API Testing & Postman
 
-- [Currency Conversion API Testing Assessment](./API-Testing/Currency_Conversion_API_Testing_Assessment.txt)
+- [Currency Conversion API Testing Assessment](./Currency-conversion-Api-Testing-assessment.csv)
 
 ### Mobile Application Testing
 
