@@ -90,7 +90,7 @@ The program includes:
 
 ### Test Cases & TestRail
 
-- [Right Way Auto Sales — Search & Filtering Testing](./Test-Cases/Right_Way_Auto_Sales_Search_Filtering_Testing.txt)
+- [Right Way Auto Sales — Search & Filtering Testing](./Righ-Way-Auto-Sales-Searching-Filtering-Testing.csv)
 
 ### Bug Reports & Jira
 
