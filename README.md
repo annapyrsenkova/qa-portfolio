@@ -89,22 +89,32 @@ The program includes:
 ## Portfolio
 
 ### Test Cases & TestRail
-Test case design, execution, test documentation, and test management.
+
+- [Right Way Auto Sales — Search & Filtering Testing](./Test-Cases/Right_Way_Auto_Sales_Search_Filtering_Testing.txt)
 
 ### Bug Reports & Jira
-Bug reports with reproduction steps, expected and actual results, severity, priority, and defect tracking.
+
+- [Jira Bug Investigation Project](./Bug-Reports/Jira_Bug_Investigation_Project.txt)
 
 ### API Testing & Postman
-API testing using HTTP requests, GET / POST methods, variables, parameters, and JSON.
+
+- [Currency Conversion API Testing Assessment](./API-Testing/Currency_Conversion_API_Testing_Assessment.txt)
 
 ### Mobile Application Testing
-Manual testing of mobile applications with a focus on functionality, UI, compatibility, and usability.
 
-### Agile / Scrum / Kanban
-Practice with Jira Scrum Boards, Kanban Boards, sprints, and Trello.
+- [Go Train & Bus Schedule — Mobile App Testing](./Mobile-Testing/Go_Train_Bus_Schedule_Mobile_App_Testing.txt)
+
+### BDD & Cucumber
+
+- [Student Registration Form — BDD & Cucumber Testing](./BDD-Cucumber/Jira_Student_Registration_Form_Cucumber_Tests.txt)
 
 ### Checklists
+
 Testing checklists created during QA training projects.
+
+### Agile / Scrum / Kanban
+
+Practice with Jira Scrum Boards, Kanban Boards, sprints, and Trello.
 
 ## CV
 
