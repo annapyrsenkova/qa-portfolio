@@ -1,93 +1,118 @@
 # Anna Pyrsenkova — Junior QA Manual Tester
 
-## 👩‍💻 About Me
+## About Me
 
 I am a Junior QA Manual Tester with hands-on experience gained through structured QA training and practical testing projects.
 
-I have experience with manual testing of web and mobile applications, test case design, bug reporting, functional, regression, smoke, exploratory and UI testing.
+I have experience testing web and mobile applications and working with test cases, bug reports, functional, regression, smoke, exploratory, UI, negative, and edge-case testing.
 
-I am currently looking for an entry-level QA opportunity where I can apply my skills, continue learning and grow as a QA professional.
+I am detail-oriented, analytical, organized, and focused on delivering high-quality results. I am currently looking for an entry-level QA opportunity where I can apply my skills and continue developing as a QA professional.
 
-## 🛠 Skills & Tools
+## Skills & Tools
 
-### Testing
-
+### Manual Testing
 - Manual Testing
-
 - Functional Testing
-
 - Regression Testing
-
 - Smoke Testing
-
 - Exploratory Testing
-
 - UI Testing
-
+- Mobile Application Testing
 - Negative & Edge Case Testing
-
 - Test Case Design & Execution
-
+- Checklists
 - Bug Reporting
+- Defect Lifecycle
+- Client-Server Testing
 
-### Tools
-
-- Jira
-
-- TestRail
-
+### API Testing
 - Postman
+- GET / POST Requests
+- Variables & Parameters
+- JSON
+- Swagger
 
-- Chrome DevTools
-
-- Excel / Google Sheets
-
-- iOS / Android Testing
-
-- Selenium
-
-## 🎓 QA Training
-
-**Legion School, Toronto, Canada**  
-
-QA Manual Testing Program | 2024–2026
-
-Training included:
-
-- Manual testing
-
-- Test case design
-
-- Bug reporting
-
+### Test Management & Agile
 - Jira
-
 - TestRail
+- Agile Testing
+- Scrum
+- Kanban
+- Jira Scrum Board
+- Trello
 
-- API testing with Postman
+### Other Tools
+- Chrome DevTools
+- Excel / Google Sheets
+- iOS / Android Testing
+- Selenium — Basic
 
+## QA Training
+
+**Legion IT Academy, Toronto, Canada**  
+**QA Manual Testing Program | 2024–2026**
+
+The program includes:
+
+- Manual Web & Mobile Testing
+- Test Design & Test Case Management
+- TestRail
+- Bug Reporting & Defect Management
+- Jira
+- Client-Server Testing
+- API Testing with Postman
+- HTTP Requests, GET / POST, JSON, Variables & Parameters
+- Swagger
+- Mobile Application Testing
+- Manual vs. Automation Testing
+- Agile Testing
+- Scrum & Kanban
+- Jira Scrum Board
+- Trello
+- BDD / Gherkin / Cucumber
+- Xray Test Management
+- SQL & Database Testing
+- PostgreSQL
+- Linux Fundamentals
 - SDLC / STLC
 
-- Agile fundamentals
+## Currently Learning
 
-## 📂 Portfolio
+- BDD & Gherkin
+- Cucumber
+- Xray
+- SQL
+- PostgreSQL
+- Database Testing
+- Linux for QA
 
-- [Test Cases](./Test-Cases)
+## Portfolio
 
-- [Bug Reports](./Bug-Reports)
+### Test Cases & TestRail
+Test case design, execution, test documentation, and test management.
 
-- [Checklists](./Checklists)
+### Bug Reports & Jira
+Bug reports with reproduction steps, expected and actual results, severity, priority, and defect tracking.
 
-- [API Testing](./API-Testing)
+### API Testing & Postman
+API testing using HTTP requests, GET / POST methods, variables, parameters, and JSON.
 
-- [Test Reports](./Test-Reports)
+### Mobile Application Testing
+Manual testing of mobile applications with a focus on functionality, UI, compatibility, and usability.
 
-## 📄 CV
+### Agile / Scrum / Kanban
+Practice with Jira Scrum Boards, Kanban Boards, sprints, and Trello.
+
+### Checklists
+Testing checklists created during QA training projects.
+
+## CV
 
 My current CV is available [here](./ANNA_PYRSENKOVA_Junior_manualqa_resume.pdf).
 
-## 🔗 Contact
+## Contact
 
-- LinkedIn: [Anna Pyrsenkova](https://www.linkedin.com/in/anna-pyrsenkova-b6b0082b5)
-
-- Location: Victoria, BC, Canada
+- **Location:** Victoria, BC, Canada
+- **LinkedIn:** [Anna Pyrsenkova](https://www.linkedin.com/in/anna-pyrsenkova-b6b0082b5)
+- **GitHub:** [QA Portfolio](https://github.com/annapyrsenkova/qa-portfolio)
+- **Email:** anya.biletska11@gmail.com
