@@ -84,7 +84,7 @@ Training included:
 
 ## 📄 CV
 
-My current CV is available [here](./CV).
+My current CV is available [here](ANNA PYRSENKOVA Junior QA Resume .pdf).
 
 ## 🔗 Contact
 
