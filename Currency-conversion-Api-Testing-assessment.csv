@@ -1,0 +1,197 @@
+﻿Summary,Issue key,Issue id,Issue Type,Status,Project key,Project name,Project type,Project lead,Project lead id,Project description,Priority,Resolution,Assignee,Assignee Id,Reporter,Reporter Id,Creator,Creator Id,Created,Updated,Last Viewed,Resolved,Due date,Votes,Description,Environment,Watchers,Watchers Id,Original estimate,Remaining Estimate,Time Spent,Work Ratio,Σ Original Estimate,Σ Remaining Estimate,Σ Time Spent,Security Level,Custom field (Actual end),Custom field (Actual start),Custom field (Affected hardware),Custom field (Affected services),Custom field (Approvals),Custom field (Asset type),Custom field (Asset type),Custom field (Asset type),Custom field (Asset type),Custom field (Asset type),Custom field (Asset type),Custom field (Asset type),Custom field (Asset type),Custom field (Asset type),Custom field (Asset type),Custom field (Asset type),Custom field (Asset type),Custom field (Atlas goals),Custom field (Atlas project),Custom field (Atlas project status),Custom field (Backout plan),Custom field (Begin Date),Custom field (Category),Custom field (Category),Custom field (Change reason),Custom field (Change risk),Custom field (Change type),Custom field (Comments),Custom field (Confidence),Custom field (Delivery progress),Custom field (Delivery status),Custom field (Department),Custom field (Department),Custom field (Department),Custom field (Department),Custom field (Department),Custom field (Department),Custom field (Department),Custom field (Department),Custom field (Designs ready),Custom field (Development),Custom field (Documents),Custom field (Effort),Custom field (End Date),Custom field (Epic Color),Custom field (Epic Name),Custom field (Epic Status),Custom field (Goals),Custom field (Idea archived),Custom field (Idea archived on),Custom field (Idea short description),Custom field (Impact),Custom field (Impact),Custom field (Impact score),Custom field (Implementation plan),Custom field (Insights),Custom field (Investigation reason),Custom field (Issue color),Custom field (Linked issues),Custom field (Locked forms),Custom field (Major incident),Custom field (Open forms),Custom field (Pending reason),Custom field (Planned end),Custom field (Planned start),Custom field (Project overview key),Custom field (Project overview status),Custom field (Project start),Custom field (Project target),Custom field (Rank),Custom field (Request Type),Custom field (Request language),Custom field (Request participants),Custom field (Responders),Custom field (Revision),Custom field (Roadmap),Custom field (Root cause),Satisfaction rating,Custom field (Satisfaction date),Custom field (Sentiment),Custom field (Severity),Custom field (Source),Custom field (Spec ready),Custom field (Start date),Custom field (Story Points),Custom field (Story point estimate),Custom field (Submitted forms),Custom field (Target end),Custom field (Target start),Custom field (Team),Custom field (Test plan),Custom field (Time to close after resolution),Custom field (Time to done),Custom field (Time to first response),Custom field (Time to resolution),Custom field (Time to review normal change),Custom field (Total forms),Custom field (Urgency),Custom field (Value),Custom field (Vulnerability),Custom field (Work category),Custom field (Workaround),Custom field ([CHART] Date of First Response),Custom field ([CHART] Time in Status),Status Category,Status Category Changed
+login without API key negative test,APM-12,16304,Bug,To Do,APM,Anna Pyrsenkova (M6),software,Analytica Squad,712020:3a07c8ae-ecbf-4dc0-be70-568e2f6a71a6,,Highest,,,,Analytica Squad,712020:3a07c8ae-ecbf-4dc0-be70-568e2f6a71a6,Analytica Squad,712020:3a07c8ae-ecbf-4dc0-be70-568e2f6a71a6,31/Jan/25 9:05 PM,31/Jan/25 9:05 PM,,,,0,"*Steps to reproduce*
+
+Navigate to [https://api.apilayer.com|https://api.apilayer.com/]
+
+*Expected result*
+
+Login of an unregistered user without an API key.
+The system is expected to notify that access is not possible without registration and prompt the user to register.
+
+*Actual result*
+
+The system notified that the user was not found.
+
+User login successful
+Success: true
+It returns code 401 OK
+
+{{""message"": ""No API key found in request""}}",,,,,,,,,,,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@51499857,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i00wv7:,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,To Do,31/Jan/25 9:05 PM
+Login via incorrect API t key negative test,APM-11,16303,Bug,To Do,APM,Anna Pyrsenkova (M6),software,Analytica Squad,712020:3a07c8ae-ecbf-4dc0-be70-568e2f6a71a6,,Highest,,,,Analytica Squad,712020:3a07c8ae-ecbf-4dc0-be70-568e2f6a71a6,Analytica Squad,712020:3a07c8ae-ecbf-4dc0-be70-568e2f6a71a6,31/Jan/25 8:59 PM,31/Jan/25 8:59 PM,31/Jan/25 8:59 PM,,,0,"*Steps to reproduce*
+
+Navigate to [https://api.apilayer.com|https://api.apilayer.com/]
+
+*Expected result*
+
+An incorrect API key was entered.
+As expected, the user will not be able to log in, and the system will prompt them to enter the correct data again.
+
+*Actual result*
+
+The system reports that the data is incorrect. With an invalid API key, access will not be possible
+
+User login successful
+Success: true
+It returns code 401 OK
+{{""message"": ""Invalid authentication credentials""}}",,,,,,,,,,,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@31c540,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i00wuz:,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,To Do,31/Jan/25 8:59 PM
+Incorrect currency negative test,APM-10,16302,Bug,To Do,APM,Anna Pyrsenkova (M6),software,Analytica Squad,712020:3a07c8ae-ecbf-4dc0-be70-568e2f6a71a6,,High,,,,Analytica Squad,712020:3a07c8ae-ecbf-4dc0-be70-568e2f6a71a6,Analytica Squad,712020:3a07c8ae-ecbf-4dc0-be70-568e2f6a71a6,31/Jan/25 8:43 PM,31/Jan/25 8:43 PM,31/Jan/25 8:52 PM,,,0,"*Steps to reproduce*
+
+Navigate to [https://api.apilayer.com|https://api.apilayer.com/]
+
+*Expected result*
+
+The user entered an incorrect source currency, for example, ‘Rab’ instead of ‘RUB’.
+The system should display an error message about the incorrect input and provide an example of the correct value (source: RUB).
+
+*l result*
+
+The system responded correctly when an incorrect source currency was entered. It informed the user about the error and provided an example of the correct format.
+
+It returns code 201
+
+{noformat}""success"": false,
+    ""error"": {
+        ""code"": 201,
+        ""info"": ""You have supplied an invalid Source Currency. [Example: source=EUR]""{noformat}",,,,,,,,,,,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@4ef610f0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i00wur:,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,To Do,31/Jan/25 8:43 PM
+incorrect DATA test,APM-9,16301,Bug,To Do,APM,Anna Pyrsenkova (M6),software,Analytica Squad,712020:3a07c8ae-ecbf-4dc0-be70-568e2f6a71a6,,High,,,,Analytica Squad,712020:3a07c8ae-ecbf-4dc0-be70-568e2f6a71a6,Analytica Squad,712020:3a07c8ae-ecbf-4dc0-be70-568e2f6a71a6,31/Jan/25 8:32 PM,31/Jan/25 8:37 PM,31/Jan/25 8:43 PM,,,0,,"*Steps to reproduce*
+
+Navigate to [https://api.apilayer.com|https://api.apilayer.com/]
+
+*Expected result*
+
+The user entered incorrect data, ‘2@’.
+The system should display a message indicating that the ‘Data’ is entered incorrectly.
+
+*l result*
+
+The system responded correctly when an incorrect date was entered. It informed the user about the error and provided an example of the correct format.
+
+It returns code 302 
+
+{noformat}""success"": false,
+    ""error"": {
+        ""code"": 302,
+        ""info"": ""You have entered an invalilate. [Required format: date=YYYY-MM-DD]""{noformat}",,,,,,,,,,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@5e373e49,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i00wuj:,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,To Do,31/Jan/25 8:32 PM
+without DATA  negative test,APM-8,16300,Bug,To Do,APM,Anna Pyrsenkova (M6),software,Analytica Squad,712020:3a07c8ae-ecbf-4dc0-be70-568e2f6a71a6,,Highest,,,,Analytica Squad,712020:3a07c8ae-ecbf-4dc0-be70-568e2f6a71a6,Analytica Squad,712020:3a07c8ae-ecbf-4dc0-be70-568e2f6a71a6,31/Jan/25 8:24 PM,31/Jan/25 8:33 PM,31/Jan/25 8:25 PM,,,0,"*Steps to reproduce*
+
+Navigate to [https://api.apilayer.com|https://api.apilayer.com/]
+
+*Expected result*
+
+The user leaves the ‘Data’ field empty.
+The system should display an error message stating that ‘Data is not entered’ and prompt the user to enter the ‘Data’
+
+*l result*
+
+The system provided the correct response and prompts the user to enter a date to proceed with the request.
+
+It returns code 301
+
+{noformat}""success"": false,
+    ""error"": {
+        ""code"": 301,
+        ""info"": ""You have not specifate. [Required format: date=YYYY-MM-DD]""{noformat}",,,,,,,,,,,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@3135d2bc,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i00wub:,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,To Do,31/Jan/25 8:24 PM
+correct DATA test ,APM-7,16299,Bug,To Do,APM,Anna Pyrsenkova (M6),software,Analytica Squad,712020:3a07c8ae-ecbf-4dc0-be70-568e2f6a71a6,,High,,,,Analytica Squad,712020:3a07c8ae-ecbf-4dc0-be70-568e2f6a71a6,Analytica Squad,712020:3a07c8ae-ecbf-4dc0-be70-568e2f6a71a6,31/Jan/25 8:22 PM,31/Jan/25 8:22 PM,31/Jan/25 8:23 PM,,,0,"*Steps to reproduce*
+
+Navigate to [https://api.apilayer.com|https://api.apilayer.com/]
+
+*Expected result*
+
+The user enters a valid date, for example, 2025-01-31.
+The request is entered correctly, and the system responds correctly.
+200 OK
+It displays all quotes accurately, matching the user’s requested date.
+
+*Actual result*
+
+All data is entered correctly.
+The system returns the correct value with 200 OK, responding to the user’s request
+
+
+It returns code 200 OK
+
+{noformat}""success"": true,
+    ""historical"": true,
+    ""date"": ""2025-01-31"",{noformat}",,,,,,,,,,,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@4e601d2b,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i00wu3:,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,To Do,31/Jan/25 8:22 PM
+correct currency USDCAD test,APM-6,16298,Bug,To Do,APM,Anna Pyrsenkova (M6),software,Analytica Squad,712020:3a07c8ae-ecbf-4dc0-be70-568e2f6a71a6,,Medium,,,,Analytica Squad,712020:3a07c8ae-ecbf-4dc0-be70-568e2f6a71a6,Analytica Squad,712020:3a07c8ae-ecbf-4dc0-be70-568e2f6a71a6,31/Jan/25 7:56 PM,31/Jan/25 7:56 PM,31/Jan/25 8:22 PM,,,0,"*Steps to reproduce*
+
+Navigate to [https://api.apilayer.com|https://api.apilayer.com/]
+
+*Expected result*
+
+User provided correct currency data: source USD NCAD. The system responds and provides information for the query USDCAD
+
+It displays the real-time currency value.
+
+*Actual result*
+
+The system responds positively to the user’s query ‘USDCAD’.
+
+It displays the real-time currency value.
+It returns code 200 OK
+Success: true",,,,,,,,,,,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@a1ff1c8,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i00wtv:,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,To Do,31/Jan/25 7:56 PM
+correct currency USDNIS test,APM-5,16297,Bug,To Do,APM,Anna Pyrsenkova (M6),software,Analytica Squad,712020:3a07c8ae-ecbf-4dc0-be70-568e2f6a71a6,,High,,,,Analytica Squad,712020:3a07c8ae-ecbf-4dc0-be70-568e2f6a71a6,Analytica Squad,712020:3a07c8ae-ecbf-4dc0-be70-568e2f6a71a6,31/Jan/25 7:54 PM,31/Jan/25 7:55 PM,31/Jan/25 7:57 PM,,,0,"*Steps to reproduce*
+
+Navigate to [https://api.apilayer.com|https://api.apilayer.com/]
+
+*Expected result*
+
+User provided correct currency data: source USD NIS. The system responds and provides information for the query USDNIS
+
+It displays the real-time currency value.
+
+*Actual result*
+
+The system responds positively to the user’s query ‘USDNIS’.
+
+It displays the real-time currency value.
+It returns code 200 OK
+Success: true",,,,,,,,,,,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@76c36e5c,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i00wtn:,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,To Do,31/Jan/25 7:54 PM
+correct currency USDEUR test,APM-4,16296,Bug,To Do,APM,Anna Pyrsenkova (M6),software,Analytica Squad,712020:3a07c8ae-ecbf-4dc0-be70-568e2f6a71a6,,Medium,,,,Analytica Squad,712020:3a07c8ae-ecbf-4dc0-be70-568e2f6a71a6,Analytica Squad,712020:3a07c8ae-ecbf-4dc0-be70-568e2f6a71a6,31/Jan/25 7:53 PM,31/Jan/25 7:53 PM,,,,0,"*Steps to reproduce*
+
+Navigate to [https://api.apilayer.com|https://api.apilayer.com/]
+
+*Expected result*
+
+User provided correct currency data: source USD EUR. The system responds and provides information for the query USDEUR
+
+It displays the real-time currency value.
+
+*Actual result*
+
+The system responds positively to the user’s query ‘USDEUR’.
+
+It displays the real-time currency value.
+It returns code 200 OK
+Success: true",,,,,,,,,,,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@7a05c1ec,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i00wtf:,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,To Do,31/Jan/25 7:53 PM
+correct currency USDRUB test,APM-3,16295,Bug,To Do,APM,Anna Pyrsenkova (M6),software,Analytica Squad,712020:3a07c8ae-ecbf-4dc0-be70-568e2f6a71a6,,Medium,,,,Analytica Squad,712020:3a07c8ae-ecbf-4dc0-be70-568e2f6a71a6,Analytica Squad,712020:3a07c8ae-ecbf-4dc0-be70-568e2f6a71a6,31/Jan/25 7:42 PM,31/Jan/25 7:52 PM,31/Jan/25 8:59 PM,,,0,"*Steps to reproduce*
+
+Navigate to [https://api.apilayer.com|https://api.apilayer.com/]
+
+*Expected result*
+
+User provided correct currency data: source USD RUB. The system responds and provides information for the query USDRUB
+
+It displays the real-time currency value.
+
+*Actual result*
+
+The system responds positively to the user’s query ‘USDRUB’.
+
+It displays the real-time currency value.
+It returns code 200 OK
+Success: true",,,,,,,,,,,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@40a3fcc,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i00wt7:,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,To Do,31/Jan/25 7:42 PM
+Login via API  key for current data test,APM-1,16293,Bug,To Do,APM,Anna Pyrsenkova (M6),software,Analytica Squad,712020:3a07c8ae-ecbf-4dc0-be70-568e2f6a71a6,,High,,,,Analytica Squad,712020:3a07c8ae-ecbf-4dc0-be70-568e2f6a71a6,Analytica Squad,712020:3a07c8ae-ecbf-4dc0-be70-568e2f6a71a6,31/Jan/25 7:39 PM,31/Jan/25 8:53 PM,31/Jan/25 8:52 PM,,,0,"*Steps to reproduce*
+
+Navigate to [https://api.apilayer.com|https://api.apilayer.com]
+
+*Expected result*
+
+Login with correct API key. Expected result: user successfully logs in and gains access.
+
+*Actual result*
+
+User login successful
+Success: true
+It returns code 200 OK
+Below are all available currency values.",,Analytica Squad,712020:3a07c8ae-ecbf-4dc0-be70-568e2f6a71a6,,,,,,,,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@67136679,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i00wsr:,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,To Do,31/Jan/25 7:39 PM
